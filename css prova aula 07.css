@@ -1,0 +1,50 @@
+:root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-size-p: 1rem;
+    --spacing: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: var(--spacing);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+p {
+    font-size: var(--font-size-p);
+    margin: var(--spacing);
+}
+
+@media (min-width: 600px) {
+    :root {
+        --font-size-h1: 2.5rem;
+        --font-size-h2: 2rem;
+        --font-size-p: 1.2rem;
+        --spacing: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --font-size-h1: 3rem;
+        --font-size-h2: 2.5rem;
+        --font-size-p: 1.4rem;
+        --spacing: 32px;
+    }
+}
